@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepak Bola - Panduan Lengkap</title>
+    <link rel="icon" type="image/x-icon" href="logoola.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigasi */
+        header {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .logo i {
+            color: #ffd700;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+            padding: 5px 0;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffd700;
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Main Content */
+        section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #1e3c72;
+            border-bottom: 3px solid #ffd700;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2 i {
+            color: #1e3c72;
+        }
+
+        h3 {
+            color: #2a5298;
+            margin: 1.5rem 0 1rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        ul,
+        ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Sejarah & Peraturan */
+        .history-container,
+        .rules-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .history-card,
+        .rule-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #2a5298;
+            transition: all 0.3s;
+        }
+
+        .history-card:hover,
+        .rule-card:hover {
+            background-color: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        /* Klub Terkenal */
+        .club-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .club-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .club-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .club-logo {
+            height: 120px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .club-logo img {
+            max-height: 80px;
+            max-width: 80%;
+        }
+
+        .club-info {
+            padding: 1.5rem;
+        }
+
+        .club-info h3 {
+            margin-top: 0;
+            color: #1e3c72;
+        }
+
+        .club-country {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .club-trophies {
+            color: #2a5298;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        /* Perlombaan */
+        .competition-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .competition-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .competition-card:hover {
+            transform: scale(1.03);
+        }
+
+        .competition-header {
+            background-color: #1e3c72;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .competition-body {
+            padding: 1.5rem;
+            background-color: white;
+        }
+
+        .competition-body p {
+            margin-bottom: 1rem;
+        }
+
+        .competition-body ul {
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e3c72;
+            color: white;
+            padding: 3rem 0 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #ffd700;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffd700;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: #ffd700;
+            color: #1e3c72;
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+                display: none;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero {
+                padding: 3rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 1.2rem;
+            }
+
+            .club-container,
+            .competition-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-futbol"></i>
+                <span>Sepak Bola Dunia</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#sejarah"><i class="fas fa-history"></i> Sejarah</a></li>
+                    <li><a href="#peraturan"><i class="fas fa-book"></i> Peraturan</a></li>
+                    <li><a href="#teknik"><i class="fas fa-running"></i> Teknik Dasar</a></li>
+                    <li><a href="#klub"><i class="fas fa-tshirt"></i> Klub Terkenal</a></li>
+                    <li><a href="#perlombaan"><i class="fas fa-trophy"></i> Perlombaan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Sepak Bola: Olahraga Paling Populer di Dunia</h1>
+            <p>Temukan segala hal tentang sepak bola: sejarah, peraturan, teknik dasar, klub-klub terkenal, dan
+                kompetisi bergengsi yang mencuri perhatian dunia.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sejarah Sepak Bola -->
+        <section id="sejarah">
+            <h2><i class="fas fa-history"></i> Sejarah Sepak Bola</h2>
+            <p>Sepak bola adalah olahraga tim yang dimainkan antara dua tim yang masing-masing terdiri dari sebelas
+                pemain. Olahraga ini telah dimainkan selama berabad-abad dalam berbagai bentuk di seluruh dunia.</p>
+
+            <div class="history-container">
+                <div class="history-card">
+                    <h3>Asal Usul Kuno</h3>
+                    <p>Permainan mirip sepak bola telah dimainkan sejak zaman kuno di Cina (Cuju), Yunani (Episkyros),
+                        dan Romawi (Harpastum). Permainan ini awalnya lebih kasar dan memiliki aturan yang berbeda-beda.
+                    </p>
+                </div>
+                <div class="history-card">
+                    <h3>Abad Pertengahan di Inggris</h3>
+                    <p>Di Inggris abad pertengahan, permainan sepak bola dimainkan antara desa-desa dengan sedikit
+                        aturan dan sering kali berujung kekerasan. Raja Edward III sempat melarang permainan ini pada
+                        tahun 1365.</p>
+                </div>
+                <div class="history-card">
+                    <h3>Modernisasi dan Standarisasi</h3>
+                    <p>Pada tahun 1863, Asosiasi Sepak Bola Inggris (FA) didirikan dan menetapkan aturan resmi pertama,
+                        memisahkan sepak bola dari rugby. Inilah yang menjadi cikal bakal sepak bola modern.</p>
+                </div>
+                <div class="history-card">
+                    <h3>Penyebaran Global</h3>
+                    <p>Sepak bola menyebar ke seluruh dunia melalui pelaut, pedagang, dan tentara Inggris. FIFA
+                        didirikan pada 1904, dan Piala Dunia pertama diadakan pada 1930 di Uruguay.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Peraturan Dasar -->
+        <section id="peraturan">
+            <h2><i class="fas fa-book"></i> Peraturan Dasar Sepak Bola</h2>
+            <p>Sepak bola modern memiliki seperangkat aturan yang dikenal sebagai Laws of the Game, yang dikelola oleh
+                International Football Association Board (IFAB).</p>
+
+            <div class="rules-container">
+                <div class="rule-card">
+                    <h3>Lapangan dan Pemain</h3>
+                    <p>Lapangan sepak bola berbentuk persegi panjang dengan panjang 90-120 meter dan lebar 45-90 meter.
+                        Setiap tim terdiri dari 11 pemain, termasuk seorang penjaga gawang.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>Durasi Pertandingan</h3>
+                    <p>Pertandingan terdiri dari dua babak masing-masing 45 menit, dengan waktu istirahat 15 menit di
+                        antaranya. Wasit dapat menambah waktu tambahan (injury time) untuk mengganti waktu yang hilang.
+                    </p>
+                </div>
+                <div class="rule-card">
+                    <h3>Offside</h3>
+                    <p>Seorang pemain berada dalam posisi offside jika lebih dekat ke garis gawang lawan daripada bola
+                        dan pemain lawan kedua terakhir saat bola disentuh oleh rekannya.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>Pelanggaran dan Kartu</h3>
+                    <p>Wasit dapat memberikan kartu kuning (peringatan) atau kartu merah (pengusiran) untuk pelanggaran
+                        serius. Dua kartu kuning sama dengan satu kartu merah.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teknik Dasar -->
+        <section id="teknik">
+            <h2><i class="fas fa-running"></i> Teknik Dasar Sepak Bola</h2>
+            <p>Untuk bermain sepak bola dengan baik, pemain perlu menguasai beberapa teknik dasar yang menjadi fondasi
+                permainan.</p>
+
+            <h3>1. Menggiring Bola (Dribbling)</h3>
+            <p>Teknik mengontrol bola sambil berlari menggunakan kaki. Teknik ini penting untuk melewati pemain lawan
+                dan mempertahankan penguasaan bola.</p>
+
+            <h3>2. Mengoper Bola (Passing)</h3>
+            <p>Teknik mengirim bola kepada rekan setim. Ada beberapa jenis operan: operan pendek, operan panjang, operan
+                lambung, dan operan terobosan.</p>
+
+            <h3>3. Menendang Bola (Shooting)</h3>
+            <p>Teknik menendang bola ke arah gawang untuk mencetak gol. Akurasi dan kekuatan adalah dua faktor penting
+                dalam menendang.</p>
+
+            <h3>4. Mengontrol Bola (Controlling)</h3>
+            <p>Teknik menerima dan menguasai bola yang datang dari operan atau umpan lambung. Dapat dilakukan dengan
+                kaki, dada, atau kepala.</p>
+
+            <h3>5. Menyundul Bola (Heading)</h3>
+            <p>Teknik menggunakan kepala untuk mengoper, mencetak gol, atau membuang bola. Posisi tubuh dan waktu yang
+                tepat sangat penting.</p>
+
+            <h3>6. Merebut Bola (Tackling)</h3>
+            <p>Teknik mengambil bola dari penguasaan lawan tanpa melakukan pelanggaran. Harus dilakukan dengan hati-hati
+                untuk menghindari kartu.</p>
+
+            <h3>7. Penjaga Gawang (Goalkeeping)</h3>
+            <p>Teknik khusus untuk penjaga gawang, termasuk menangkap bola, meninju bola, dan menyelamatkan tendangan
+                penalti.</p>
+        </section>
+
+        <!-- Klub Terkenal -->
+        <section id="klub">
+            <h2><i class="fas fa-tshirt"></i> Klub-Klub Sepak Bola Terkenal</h2>
+            <p>Berikut adalah beberapa klub sepak bola paling terkenal dan sukses di dunia, diurutkan berdasarkan
+                prestasi dan pengaruh global mereka.</p>
+
+            <div class="club-container">
+                <div class="club-card">
+                    <div class="club-logo" style="background-color: #aa0000;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/800px-Manchester_United_FC_crest.svg.png"
+                            alt="Manchester United">
+                    </div>
+                    <div class="club-info">
+                        <h3>Manchester United</h3>
+                        <div class="club-country">Inggris</div>
+                        <p>Salah satu klub paling sukses di Inggris dengan 20 gelar liga dan 3 gelar Liga Champions
+                            UEFA.</p>
+                        <div class="club-trophies">🏆 20 Liga Inggris, 3 UCL, 13 FA Cup</div>
+                    </div>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-logo" style="background-color: #004D98;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/800px-FC_Barcelona_%28crest%29.svg.png"
+                            alt="FC Barcelona">
+                    </div>
+                    <div class="club-info">
+                        <h3>FC Barcelona</h3>
+                        <div class="club-country">Spanyol</div>
+                        <p>Klub Catalonia terkenal dengan filosofi "tiki-taka" dan pemain bintang seperti Messi, Xavi,
+                            dan Iniesta.</p>
+                        <div class="club-trophies">🏆 28 La Liga, 5 UCL, 32 Copa del Rey</div>
+                    </div>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-logo" style="background-color: #FFFFFF;">
+                        <img src="https://1000logos.net/wp-content/uploads/2020/09/Real-Madrid-logo.png"
+                            alt="Real Madrid">
+                    </div>
+                    <div class="club-info">
+                        <h3>Real Madrid</h3>
+                        <div class="club-country">Spanyol</div>
+                        <p>Klub paling sukses dalam sejarah Liga Champions dengan 15 gelar. Dijuluki "Los Blancos".</p>
+                        <div class="club-trophies">🏆 36 La Liga, 15 UCL, 20 Copa del Rey</div>
+                    </div>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-logo" style="background-color: #0C4C8A;">
+                        <img src="https://1000logos.net/wp-content/uploads/2016/11/Chelsea-Logo-640x400.png"
+                            alt="Chelsea FC">
+                    </div>
+                    <div class="club-info">
+                        <h3>Chelsea FC</h3>
+                        <div class="club-country">Inggris</div>
+                        <p>Klub London yang meraih kesuksesan besar sejak dibeli oleh Roman Abramovich pada 2003.</p>
+                        <div class="club-trophies">🏆 6 Liga Inggris, 2 UCL, 8 FA Cup</div>
+                    </div>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-logo" style="background-color: #C8102E;">
+                        <img src="https://1000logos.net/wp-content/uploads/2018/05/Bayern-Munchen-Logo.png"
+                            alt="Bayern Munich">
+                    </div>
+                    <div class="club-info">
+                        <h3>Bayern Munchen</h3>
+                        <div class="club-country">Jerman</div>
+                        <p>Klub paling sukses di Jerman yang mendominasi Bundesliga dan meraih 6 gelar Liga Champions.
+                        </p>
+                        <div class="club-trophies">🏆 34 Bundesliga, 6 UCL, 20 DFB-Pokal</div>
+                    </div>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-logo" style="background-color: #000000;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/800px-Liverpool_FC.svg.png"
+                            alt="Liverpool FC">
+                    </div>
+                    <div class="club-info">
+                        <h3>Liverpool FC</h3>
+                        <div class="club-country">Inggris</div>
+                        <p>Klub dengan basis penggemar besar di seluruh dunia dan telah memenangkan 19 gelar liga
+                            Inggris dan 6 Liga Champions.</p>
+                        <div class="club-trophies">🏆 20 Liga Inggris, 6 UCL, 8 FA Cup</div>
+                    </div>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-logo" style="background-color: #000000;">
+                        <img src="https://1000logos.net/wp-content/uploads/2016/10/AC-Milan-Logo.png" alt="AC Milan">
+                    </div>
+                    <div class="club-info">
+                        <h3>AC Milan</h3>
+                        <div class="club-country">Italia</div>
+                        <p>Salah satu klub paling sukses di Italia dan Eropa dengan 7 gelar Liga Champions.</p>
+                        <div class="club-trophies">🏆 19 Serie A, 7 UCL, 5 Coppa Italia</div>
+                    </div>
+                </div>
+
+                <div class="club-card">
+                    <div class="club-logo" style="background-color: #ffffff;">
+                        <img src="https://images.seeklogo.com/logo-png/29/1/juventus-2017-new-logo-png_seeklogo-297757.png"
+                            alt="Juventus">
+                    </div>
+                    <div class="club-info">
+                        <h3>Juventus</h3>
+                        <div class="club-country">Italia</div>
+                        <p>Klub Italia paling sukses dengan 36 gelar Serie A dan basis penggemar besar di seluruh dunia.
+                        </p>
+                        <div class="club-trophies">🏆 36 Serie A, 2 UCL, 15 Coppa Italia</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Perlombaan -->
+        <section id="perlombaan">
+            <h2><i class="fas fa-trophy"></i> Perlombaan Sepak Bola Terkenal</h2>
+            <p>Sepak bola memiliki berbagai kompetisi bergengsi di tingkat klub dan tim nasional yang menarik perhatian
+                miliaran penggemar di seluruh dunia.</p>
+
+            <div class="competition-container">
+                <div class="competition-card">
+                    <div class="competition-header" style="background: url('https://images.seeklogo.com/logo-png/14/1/uefa-champions-league-logo-png_seeklogo-144159.png'); 
+                        background-size: cover; background-position: center;">
+                        <!-- <h3>UEFA Champions League (UCL)</h3>
+                        <div class="competition-type">Piala Champions Eropa</div> -->
+                    </div>
+                    <div class="competition-body">
+                        <p>Kompetisi klub paling bergengsi di Eropa yang diikuti oleh juara dan peringkat teratas liga
+                            domestik Eropa.</p>
+                        <ul>
+                            <li>Dimulai: 1955 (sebagai Piala Champions Eropa)</li>
+                            <li>Format: Grup kemudian knockout</li>
+                            <li>Juara terbanyak: Real Madrid (15 gelar)</li>
+                            <!-- <li>Hadiah uang: €2+ miliar total</li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="competition-card">
+                    <div class="competition-header" style="background: url('https://images.seeklogo.com/logo-png/38/1/fifa-world-cup-2022-logo-png_seeklogo-389149.png'); 
+                        background-size: cover; background-position: center;">
+                        <!-- <h3>FIFA World Cup</h3>
+                        <div class="competition-type">Piala Dunia FIFA</div> -->
+                    </div>
+                    <div class="competition-body">
+                        <p>Kompetisi sepak bola internasional tertinggi yang diadakan setiap empat tahun antara tim
+                            nasional pria.</p>
+                        <ul>
+                            <li>Dimulai: 1930 (Uruguay)</li>
+                            <li>Peserta: 32 tim (akan menjadi 48 pada 2026)</li>
+                            <li>Juara terbanyak: Brasil (5 gelar)</li>
+                            <!-- <li>Penonton: 3.5+ miliar (final 2018)</li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="competition-card">
+                    <div class="competition-header" style="background: url('https://images.seeklogo.com/logo-png/57/1/taca-club-word-cup-mundial-de-clubes-fifa-2025-logo-png_seeklogo-577677.png'); 
+                        background-size: cover; background-position: center;">
+                        <!-- <h3>FIFA Club World Cup</h3>
+                        <div class="competition-type">Piala Dunia Antarklub</div> -->
+                    </div>
+                    <div class="competition-body">
+                        <p>Kompetisi antarklub sepak bola internasional yang mempertemukan juara dari enam konfederasi
+                            FIFA.</p>
+                        <ul>
+                            <li>Dimulai: 2000 (versi saat ini)</li>
+                            <!-- <li>Peserta: 7 klub (dari 6 konfederasi)</li> -->
+                            <li>Juara terbanyak: Real Madrid (5 gelar)</li>
+                            <li>Edisi terbaru: 2025 (juara Chelsea)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="competition-card">
+                    <div class="competition-header" style="background: url('https://images.seeklogo.com/logo-png/48/2/la-liga-logo-png_seeklogo-480414.png'); 
+                        background-size: cover; background-position: center;">
+                        <!-- <h3>La Liga</h3>
+                        <div class="competition-type">Liga Spanyol</div> -->
+                    </div>
+                    <div class="competition-body">
+                        <p>Liga sepak bola profesional tingkat teratas di Spanyol dan salah satu liga terpopuler di
+                            dunia.</p>
+                        <ul>
+                            <li>Dimulai: 1929</li>
+                            <li>Klub: 20 tim (sistem promosi/degradasi)</li>
+                            <li>Juara terbanyak: Real Madrid (36 gelar)</li>
+                            <li>Rivalitas terkenal: El Clásico</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="competition-card">
+                    <div class="competition-header" style="background: url('https://images.seeklogo.com/logo-png/28/1/new-premier-league-2016-17-logo-png_seeklogo-283441.png'); 
+                        background-size: cover; background-position: center;">
+                        <!-- <h3>English Premier League</h3>
+                        <div class="competition-type">Liga Inggris</div> -->
+                    </div>
+                    <div class="competition-body">
+                        <p>Liga sepak bola profesional tingkat teratas di sistem liga sepak bola Inggris dan salah satu
+                            liga terpopuler di dunia.</p>
+                        <ul>
+                            <li>Dimulai: 1992 (sebagai FA Premier League)</li>
+                            <li>Klub: 20 tim (sistem promosi/degradasi)</li>
+                            <li>Juara terbanyak: Manchester United (20 gelar)</li>
+                            <li>Siaran: 212 wilayah, potensi penonton 4.7 miliar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="competition-card">
+                    <div class="competition-header" style="background: url('https://images.seeklogo.com/logo-png/32/1/bundesliga-logo-png_seeklogo-320997.png'); 
+                        background-size: cover; background-position: center;">
+                        <!-- <h3>Bundesliga</h3>
+                        <div class="competition-type">Liga Jerman</div> -->
+                    </div>
+                    <div class="competition-body">
+                        <p>Liga sepak bola profesional utama Jerman yang terkenal dengan atmosfer stadion yang luar
+                            biasa dan tiket yang terjangkau.</p>
+                        <ul>
+                            <li>Dimulai: 1963</li>
+                            <li>Klub: 18 tim (sistem promosi/degradasi)</li>
+                            <li>Juara terbanyak: Bayern Munich (34 gelar)</li>
+                            <li>Rata-rata penonton: 42,000+ per pertandingan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Website Ini</h3>
+                    <p>Website ini dibuat untuk memberikan informasi lengkap tentang sepak bola, mulai dari sejarah
+                        hingga kompetisi terkini. Semua informasi disajikan dengan akurat dan terperinci.</p>
+                    <p>Website ini adalah sumber edukasi untuk penggemar sepak bola pemula maupun yang sudah lama
+                        mengikuti olahraga ini.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Navigasi Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="#sejarah"><i class="fas fa-chevron-right"></i> Sejarah Sepak Bola</a></li>
+                        <li><a href="#peraturan"><i class="fas fa-chevron-right"></i> Peraturan Dasar</a></li>
+                        <li><a href="#teknik"><i class="fas fa-chevron-right"></i> Teknik Dasar</a></li>
+                        <li><a href="#klub"><i class="fas fa-chevron-right"></i> Klub Terkenal</a></li>
+                        <li><a href="#perlombaan"><i class="fas fa-chevron-right"></i> Perlombaan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Hubungi Kami</h3>
+                    <p>Jika Anda memiliki pertanyaan atau saran tentang website ini, silakan hubungi kami melalui media
+                        sosial berikut:</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p style="margin-top: 20px;">Email: info@sepakboladunia.com</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Website Sepak Bola Dunia. Semua hak dilindungi.</p>
+                <p>Website ini dibuat untuk tujuan edukasi dan informasi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active')
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
+        });
+
+        // Smooth Scrolling untuk link navigasi
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+
+                // Tutup menu mobile setelah klik
+                if (window.innerWidth <= 768) {
+                    navMenu.classList.remove('active');
+                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+        });
+
+        // Efek hover untuk kartu klub
+        document.querySelectorAll('.club-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-10px)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+
+</html>
